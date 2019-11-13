@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2:800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none !important;
+  color: rgba(255, 255, 255, 0.781) !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black !important;
+}
+
+/* navbar styling starts */
+nav {
+  background-color: rgba(255, 255, 255, 0.692) !important;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.navbar-brand {
+  color: rgba(0, 0, 0, 0.774) !important;
+  font-family: 'Lobster', cursive;
+  font-size: 30px !important;
+}
+
+.nav-items a {
+  color: black !important;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-items a:hover {
+  color: blue !important;
+  transition: 0.7s;
+}
+
+/* navbar styling ends */
+
+/* banner area styling starts */
+.banner-area {
+  height: 100vh;
+  margin-top: 10vh;
+}
+
+.banner-heading {
+  color: rgba(255, 255, 255, 0.849);
+  font-size: 60px;
+  font-family: 'Exo 2', sans-serif;
+  margin-top: 100px !important;
+}
+
+.banner-heading-highlight {
+  color: rgba(0, 0, 255, 0.637);
+}
+
+.banner-img {
+  float: right;
+  margin-top: 5%;
+}
+
+.banner-sub-heading {
+  color: rgba(255, 255, 255, 0.521);
+  font-size: 23px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.get-started-btn {
+  color: rgba(255, 255, 255, 0.781);
+  margin-top: 20px;
+  font-size: 20px;
+  display: inline-block;
+  background: transparent;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-left: 30px;
+  border: 2px solid rgba(0, 0, 255, 0.637);
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+.get-started-btn:hover {
+  background-color: rgba(0, 0, 255, 0.637);
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+/* banner area styling ends */
+
+/* link shorten area styling starts*/
+.link-shorten-area {
+  padding-top: 20px;
+  min-height: 400px;
+  margin-bottom: 100px;
+}
+
+.link-shorten-area-heading {
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.heading-underline {
+  content: none;
+  background-color: rgba(0, 0, 255, 0.315);
+  width: 6%;
+  height: 6px;
+  position: relative;
+  margin: 10px auto;
+}
+
+.larger-link {
+  margin-top: 30px;
+}
+
+input[type="url"],
+input[type="text"] {
+  margin-top: 100px;
+  width: 60%;
+  color: white;
+  background: transparent;
+  font-size: 22px;
+  font-family: 'Arvo', serif;
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.329);
+  transition: 0.5s;
+}
+
+input[type="url"]:focus,
+input[type="text"]:focus {
+  border-color: #33ccff;
+  transition: 0.5s;
+  background-color: rgba(128, 128, 128, 0.24);
+}
+
+input[type="text"] {
+  margin-top: 20px;
+}
+
+input[type="submit"] {
+  width: 60%;
+  padding: 5px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-size: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+input[type="submit"]:hover {
+  color: orange;
+  transition: 0.6s;
+}
+
+.shorten-link-area {
+  margin: 0;
+  padding: 0;
+}
+
+.shorten-link a {
+  color: white;
+  font-size: 50px;
+  color: rgba(0, 0, 255, 0.8);
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.shorten-link:hover {
+  color: rgba(0, 0, 255, 0.5);
+  transition: 0.5s;
+}
+
+/* link shorten area styling starts*/
+
+/* footer styling starts */
+
+footer {
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.123);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+/* footer styling starts */
+
+/* scrollbar styling starts*/
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 2px;
+  background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+  border-radius: 8px;
+}
+
+/* scrollbar styling ends*/
+
+/* error page styling starts */
+.error-page {
+  background-color: black !important;
+}
+
+/* error page styling ends */
