@@ -14,7 +14,7 @@ app.get('/:name', async (req, res) => {
   const puny = await urls.find(req.params.name);
   if (puny) {
     res.redirect(puny.url);
-  } else { 
+  } else {
     res.redirect(`/404.html?name=${req.params.name}`);
   }
 });

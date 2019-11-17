@@ -94,7 +94,15 @@
       <div id="shorten-link-area" class="shorten-link-area">
         <h4 v-if="success" id="shorten-link" class="shorten-link animated zoomInUp slow" style="display:block;">
           <a :href="'/' + name" target="_blank">https://insta-url.herokuapp.com/{{name}}</a>
+
+          <div class="text-center">
+            <div class="new-link-btn mt-5" onclick="window.location.reload()">
+              Create another
+            </div>
+          </div>
         </h4>
+
+
       </div>
 
     </section>
