@@ -13,24 +13,32 @@
   <!-- bootstrap cdn starts-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <!-- bootstrap cdn ends -->
+
+  <!-- fontawesome cdn starts -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- fontawesome cdn ends -->
 </head>
 
 <body>
 
   <!-- navbar starts -->
-  <nav class="navbar-fixed-top navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand">instaURL</a>
-      </div>
-      <div>
-        <ul class="nav navbar-nav navbar-right">
-          <li class="nav-items" style="color:black !important;"><a href="#app">Home</a></li>
-          <li class="nav-items"><a href="#link-shorten-area">Create</a></li>
+
+  <div class="nav-area">
+    <header>
+      <a class="logo">instaURL</a>
+      <div class="menu-toggle"></div>
+      <nav>
+        <ul>
+          <li><a href="#app">Home</a></li>
+          <li><a href="#link-shorten-area">Create</a></li>
         </ul>
-      </div>
-    </div>
-  </nav>
+      </nav>
+
+      <div class="clearfix"></div>
+    </header>
+  </div>
+
   <!-- navbar ends -->
 
   <main class="container" id="app">
@@ -99,6 +107,18 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
   <script src="main.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.menu-toggle').click(function () {
+        $('.menu-toggle').toggleClass('active');
+        $('nav').toggleClass('active');
+      });
+    })
+  </script>
 </body>
 
 </html>
