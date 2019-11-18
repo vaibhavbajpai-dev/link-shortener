@@ -323,6 +323,10 @@ input[type="submit"]:hover {
   input[type="submit"] {
     font-size: 20px;
   }
+
+  .shorten-link a {
+    font-size: 20px;
+  }
 }
 
 /* link shorten area styling starts*/

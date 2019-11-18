@@ -4,7 +4,7 @@ const db = require('./connection');
 const urls = db.get('urls');
 
 const schema = Joi.object().keys({
-  name: Joi.string().token().min(1).max(100).required(),
+  name: Joi.string().token().min(1).max(10).required(),
   url: Joi.string().uri({
     scheme: [
       /https?/
