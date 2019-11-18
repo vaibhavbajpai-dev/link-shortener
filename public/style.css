@@ -11,7 +11,6 @@
 
 a {
   text-decoration: none !important;
-  color: rgba(255, 255, 255, 0.781) !important;
 }
 
 html {
@@ -141,6 +140,7 @@ nav ul li a:hover {
   }
 }
 
+
 /* navbar styling ends */
 
 /* banner area styling starts */
@@ -167,7 +167,7 @@ nav ul li a:hover {
 
 .banner-sub-heading {
   color: rgba(255, 255, 255, 0.521);
-  font-size: 23px;
+  font-size: 26px;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -195,6 +195,26 @@ nav ul li a:hover {
 
 .new-link-btn {
   margin: 60px 0 0 0;
+}
+
+
+@media (max-width: 768px) {
+  .banner-area {
+    height: 800px;
+    margin-top: 10vh;
+  }
+
+  .banner-heading {
+    font-size: 40px;
+  }
+
+  .banner-sub-heading {
+    font-size: 18px;
+  }
+
+  .get-started-btn {
+    margin-left: 25%;
+  }
 }
 
 /* banner area styling ends */
@@ -276,9 +296,8 @@ input[type="submit"]:hover {
 }
 
 .shorten-link a {
-  color: white;
   font-size: 50px;
-  color: rgba(0, 0, 255, 0.8);
+  color: rgb(55, 101, 180);
   cursor: pointer;
   text-align: center;
   display: block;
@@ -286,9 +305,24 @@ input[type="submit"]:hover {
   padding: 0;
 }
 
-.shorten-link:hover {
-  color: rgba(0, 0, 255, 0.5);
+.shorten-link a:hover {
+  color: rgb(6, 70, 179);
   transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+  .link-shorten-area-heading {
+    font-size: 35px;
+  }
+
+  input[type="text"],
+  input[type="url"] {
+    font-size: 16px;
+  }
+
+  input[type="submit"] {
+    font-size: 20px;
+  }
 }
 
 /* link shorten area styling starts*/
