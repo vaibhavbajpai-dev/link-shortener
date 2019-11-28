@@ -7,8 +7,9 @@
   <title>instaURL</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="https://jenil.github.io/bulmaswatch/lumen/bulmaswatch.min.css">
+  <!-- custom css starts -->
   <link rel="stylesheet" href="style.css">
+  <!-- custom css ends -->
 
   <!-- bootstrap cdn starts-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -53,8 +54,8 @@
           <h2 class="banner-sub-heading">Take your links to a new level and start sharing branded links.</h2>
         </div>
 
-        <div class="col-sm-5">
-          <img class="banner-img" src="test5.svg" alt="" height="450" width="500">
+        <div class="col-sm-5 mt-0">
+          <img class="banner-img" src="test5.svg" alt="" height="400" width="450">
         </div>
       </div>
 
@@ -73,13 +74,15 @@
       </div>
 
       <form v-if="!success" @submit.prevent="createShortLink()" class="text-center">
-        <div v-if="error" class="notification is-danger">
+        <div v-if="error" class="alert alert-danger">
           {{error}}
         </div>
 
         <input type="url" v-model="url" class="larger-link shadow-lg" name="larger-link" id=""
           placeholder="Paste your link here (Eg: https://www.google.com)" onfocus="this.placeholder=''"
           onblur="this.placeholder='Paste your link here (Eg: https://www.google.com)'" spellcheck="false" required />
+
+        <!-- value="https://www.google.com"  -->
 
         <input type="text" v-model="name" class="larger-link shadow-lg" name="larger-link" maxlength="10" id=""
           placeholder="Write a custom name..." onfocus="this.placeholder=''"
