@@ -1,7 +1,7 @@
 {
-  "name": "instaurl.co",
+  "name": "insta-url",
   "version": "1.0.0",
-  "description": "A full stack URL Shortener",
+  "description": "insta",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
